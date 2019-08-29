@@ -236,3 +236,10 @@ Write-Host "     _.-^^---....,,--
        `-=#$%&%$#=-'   
           | ;  :|     
  _____.,-#%&$@%#&#~,._____" -ForegroundColor white -BackgroundColor Black
+ 
+Write-Host '--------------------------" -ForegroundColor Green
+Write-Host 'Welcome to' "$env:computername" -ForegroundColor Green
+Write-Host "You are logged in as" "$env:username"
+Write-Host "Today:" (Get-Date)
+Set-Location c:\
+Write-Host "PowerShell"($PSVersionTable.PSVersion.Major)"awaiting your commands."
